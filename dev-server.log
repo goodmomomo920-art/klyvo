@@ -1,0 +1,210 @@
+
+> livo-store@0.1.0 dev
+> next dev
+
+▲ Next.js 16.4.0 (Turbopack)
+- Local:         http://localhost:63116
+- Network:       http://192.168.1.3:63116
+- Environments: .env.local
+✓ Ready in 805ms
+✓ Running next.config.ts took 70ms
+
+○ Compiling /login ...
+ GET /login 200 in 3.9s (next.js: 3.1s, proxy.ts: 443ms, application-code: 286ms)
+ GET / 200 in 3.5s (next.js: 1752ms, proxy.ts: 708ms, application-code: 1000ms)
+ GET /dashboard 307 in 508ms (proxy.ts: 148ms)
+ GET /dashboard 200 in 877ms (next.js: 42ms, proxy.ts: 225ms, application-code: 610ms)
+ GET /dashboard/coupons 200 in 872ms (next.js: 459ms, proxy.ts: 240ms, application-code: 172ms)
+ POST /dashboard/coupons 200 in 911ms (next.js: 45ms, proxy.ts: 218ms, application-code: 648ms)
+  └─ ƒ getAuthorizedStoreCoupons() in 617ms src/lib/server/coupons.ts
+ POST /dashboard/coupons 200 in 1131ms (next.js: 9ms, proxy.ts: 209ms, application-code: 912ms)
+  └─ ƒ getAuthorizedStoreCoupons() in 885ms src/lib/server/coupons.ts
+ GET /dashboard/analytics 200 in 372ms (next.js: 93ms, proxy.ts: 221ms, application-code: 58ms)
+ POST /dashboard/analytics 200 in 531ms (next.js: 15ms, proxy.ts: 133ms, application-code: 384ms)
+  └─ ƒ getAuthorizedStoreAnalytics({"from":"","preset":"30d","to":""}) in 365ms src/lib/server/analytics.ts
+ GET /dashboard/abandoned-carts 200 in 461ms (next.js: 291ms, proxy.ts: 120ms, application-code: 50ms)
+ POST /dashboard/abandoned-carts 200 in 661ms (next.js: 29ms, proxy.ts: 118ms, application-code: 514ms)
+  └─ ƒ getAuthorizedAbandonedCarts({"page":1,"pageSize":10}) in 496ms src/lib/server/cartLifecycle.ts
+✓ Finished filesystem cache database compaction in 13.5s
+ GET /dashboard/abandoned-carts 200 in 1466ms (next.js: 345ms, proxy.ts: 438ms, application-code: 683ms)
+ POST /dashboard/abandoned-carts 200 in 929ms (next.js: 14ms, proxy.ts: 212ms, application-code: 702ms)
+  └─ ƒ getAuthorizedAbandonedCarts({"page":1,"pageSize":10}) in 684ms src/lib/server/cartLifecycle.ts
+⨯ ./src/app/store/[slug]/layout.tsx:8:14
+Error: Route segment config "instant" requires `nextConfig.cacheComponents` to be enabled.
+  [90m 6 |[0m [90m// dashboard segment, which opts out of static-shell validation for the same[0m
+  [90m 7 |[0m [90m// reason). Data is validated outside the browser; never trusted client-side.[0m
+[31m[1m>[0m [90m 8 |[0m [36mexport[0m [36mconst[0m instant = [36mfalse[0m;
+  [90m   |[0m              [31m[1m^^^^^^^[0m
+  [90m 9 |[0m
+  [90m10 |[0m [36mexport[0m [36mdefault[0m [36masync[0m [36mfunction[0m [33mStoreLayout[0m({
+  [90m11 |[0m   children,
+
+Ecmascript file had an error
+
+
+ GET /store/8283 500 in 1792ms (next.js: 1022ms, proxy.ts: 126ms, application-code: 645ms)
+[browser] Uncaught Error: ./src/app/store/[slug]/layout.tsx:8:14
+Error: Route segment config "instant" requires `nextConfig.cacheComponents` to be enabled.
+   6 | // dashboard segment, which opts out of static-shell validation for the same
+   7 | // reason). Data is validated outside the browser; never trusted client-side.
+>  8 | export const instant = false;
+     |              ^^^^^^^
+   9 |
+  10 | export default async function StoreLayout({
+  11 |   children,
+
+Ecmascript file had an error
+
+
+[browser] ./src/app/store/[slug]/layout.tsx:8:14
+Error: Route segment config "instant" requires `nextConfig.cacheComponents` to be enabled.
+   6 | // dashboard segment, which opts out of static-shell validation for the same
+   7 | // reason). Data is validated outside the browser; never trusted client-side.
+>  8 | export const instant = false;
+     |              ^^^^^^^
+   9 |
+  10 | export default async function StoreLayout({
+  11 |   children,
+
+Ecmascript file had an error 
+[browser] ./src/app/store/[slug]/layout.tsx:8:14
+Error: Route segment config "instant" requires `nextConfig.cacheComponents` to be enabled.
+   6 | // dashboard segment, which opts out of static-shell validation for the same
+   7 | // reason). Data is validated outside the browser; never trusted client-side.
+>  8 | export const instant = false;
+     |              ^^^^^^^
+   9 |
+  10 | export default async function StoreLayout({
+  11 |   children,
+
+Ecmascript file had an error 
+[browser] ./src/app/store/[slug]/layout.tsx:8:14
+Error: Route segment config "instant" requires `nextConfig.cacheComponents` to be enabled.
+   6 | // dashboard segment, which opts out of static-shell validation for the same
+   7 | // reason). Data is validated outside the browser; never trusted client-side.
+>  8 | export const instant = false;
+     |              ^^^^^^^
+   9 |
+  10 | export default async function StoreLayout({
+  11 |   children,
+
+Ecmascript file had an error 
+[browser] ./src/app/store/[slug]/layout.tsx:8:14
+Error: Route segment config "instant" requires `nextConfig.cacheComponents` to be enabled.
+   6 | // dashboard segment, which opts out of static-shell validation for the same
+   7 | // reason). Data is validated outside the browser; never trusted client-side.
+>  8 | export const instant = false;
+     |              ^^^^^^^
+   9 |
+  10 | export default async function StoreLayout({
+  11 |   children,
+
+Ecmascript file had an error 
+[browser] ./src/app/store/[slug]/layout.tsx:8:14
+Error: Route segment config "instant" requires `nextConfig.cacheComponents` to be enabled.
+   6 | // dashboard segment, which opts out of static-shell validation for the same
+   7 | // reason). Data is validated outside the browser; never trusted client-side.
+>  8 | export const instant = false;
+     |              ^^^^^^^
+   9 |
+  10 | export default async function StoreLayout({
+  11 |   children,
+
+Ecmascript file had an error 
+[browser] ./src/app/store/[slug]/layout.tsx:8:14
+Error: Route segment config "instant" requires `nextConfig.cacheComponents` to be enabled.
+   6 | // dashboard segment, which opts out of static-shell validation for the same
+   7 | // reason). Data is validated outside the browser; never trusted client-side.
+>  8 | export const instant = false;
+     |              ^^^^^^^
+   9 |
+  10 | export default async function StoreLayout({
+  11 |   children,
+
+Ecmascript file had an error 
+[browser] ./src/app/store/[slug]/layout.tsx:8:14
+Error: Route segment config "instant" requires `nextConfig.cacheComponents` to be enabled.
+   6 | // dashboard segment, which opts out of static-shell validation for the same
+   7 | // reason). Data is validated outside the browser; never trusted client-side.
+>  8 | export const instant = false;
+     |              ^^^^^^^
+   9 |
+  10 | export default async function StoreLayout({
+  11 |   children,
+
+Ecmascript file had an error 
+[browser] ./src/app/store/[slug]/layout.tsx:8:14
+Error: Route segment config "instant" requires `nextConfig.cacheComponents` to be enabled.
+   6 | // dashboard segment, which opts out of static-shell validation for the same
+   7 | // reason). Data is validated outside the browser; never trusted client-side.
+>  8 | export const instant = false;
+     |              ^^^^^^^
+   9 |
+  10 | export default async function StoreLayout({
+  11 |   children,
+
+Ecmascript file had an error 
+[browser] ./src/app/store/[slug]/layout.tsx:8:14
+Error: Route segment config "instant" requires `nextConfig.cacheComponents` to be enabled.
+   6 | // dashboard segment, which opts out of static-shell validation for the same
+   7 | // reason). Data is validated outside the browser; never trusted client-side.
+>  8 | export const instant = false;
+     |              ^^^^^^^
+   9 |
+  10 | export default async function StoreLayout({
+  11 |   children,
+
+Ecmascript file had an error 
+ GET /login 500 in 260ms (next.js: 239ms, proxy.ts: 10ms, application-code: 11ms)
+[browser] ./src/app/store/[slug]/layout.tsx:8:14
+Error: Route segment config "instant" requires `nextConfig.cacheComponents` to be enabled.
+   6 | // dashboard segment, which opts out of static-shell validation for the same
+   7 | // reason). Data is validated outside the browser; never trusted client-side.
+>  8 | export const instant = false;
+     |              ^^^^^^^
+   9 |
+  10 | export default async function StoreLayout({
+  11 |   children,
+
+Ecmascript file had an error 
+[browser] ./src/app/store/[slug]/layout.tsx:8:14
+Error: Route segment config "instant" requires `nextConfig.cacheComponents` to be enabled.
+   6 | // dashboard segment, which opts out of static-shell validation for the same
+   7 | // reason). Data is validated outside the browser; never trusted client-side.
+>  8 | export const instant = false;
+     |              ^^^^^^^
+   9 |
+  10 | export default async function StoreLayout({
+  11 |   children,
+
+Ecmascript file had an error 
+✓ Compiled in 205ms
+ GET /dashboard/abandoned-carts 200 in 1117ms (next.js: 129ms, proxy.ts: 647ms, application-code: 340ms)
+ GET /store/8283 200 in 3.0s (next.js: 1698ms, proxy.ts: 652ms, application-code: 608ms)
+sync_public_cart failed: Could not find the function public.sync_public_cart(p_items, p_slug, p_token) in the schema cache
+ POST /store/8283 200 in 324ms (next.js: 68ms, proxy.ts: 131ms, application-code: 124ms)
+  └─ ƒ syncPublicCart({"items":[],"slug":"8283","token":"Eurf3hObS3hB2Bh7GzTYsE3n32V64aV5"}) in 98ms src/lib/server/cartLifecycle.ts
+ GET /store/8283 200 in 694ms (next.js: 188ms, proxy.ts: 233ms, application-code: 273ms)
+sync_public_cart failed: Could not find the function public.sync_public_cart(p_items, p_slug, p_token) in the schema cache
+ POST /store/8283 200 in 302ms (next.js: 40ms, proxy.ts: 129ms, application-code: 134ms)
+  └─ ƒ syncPublicCart({"items":[],"slug":"8283","token":"Eurf3hObS3hB2Bh7GzTYsE3n32V64aV5"}) in 95ms src/lib/server/cartLifecycle.ts
+ GET /login 200 in 117ms (next.js: 21ms, proxy.ts: 13ms, application-code: 83ms)
+ GET /store/8283 200 in 463ms (next.js: 60ms, proxy.ts: 383ms, application-code: 20ms)
+ GET /store/8283 200 in 406ms (next.js: 23ms, proxy.ts: 318ms, application-code: 64ms)
+ GET /dashboard/settings 200 in 956ms (next.js: 664ms, proxy.ts: 168ms, application-code: 125ms)
+ POST /dashboard/settings 200 in 1158ms (next.js: 81ms, proxy.ts: 173ms, application-code: 904ms)
+  └─ ƒ getAuthorizedStoreSettings() in 846ms src/lib/server/storeSettings.ts
+ POST /dashboard/settings 200 in 834ms (next.js: 14ms, proxy.ts: 178ms, application-code: 641ms)
+  └─ ƒ getAuthorizedStoreSettings() in 600ms src/lib/server/storeSettings.ts
+ POST /dashboard/settings 200 in 954ms (next.js: 275ms, proxy.ts: 243ms, application-code: 435ms)
+  └─ ƒ updateStoreProfile({"address":"شارع 9","city":"Cairo","contactEmail":"goodmomomo920@gmail.com","...":"6 items not stringified"}) in 409ms src/lib/server/storeSettings.ts
+ GET /store/8283 200 in 657ms (next.js: 66ms, proxy.ts: 228ms, application-code: 364ms)
+sync_public_cart failed: Could not find the function public.sync_public_cart(p_items, p_slug, p_token) in the schema cache
+ POST /store/8283 200 in 285ms (next.js: 44ms, proxy.ts: 120ms, application-code: 121ms)
+  └─ ƒ syncPublicCart({"items":[],"slug":"8283","token":"Eurf3hObS3hB2Bh7GzTYsE3n32V64aV5"}) in 99ms src/lib/server/cartLifecycle.ts
+ GET /dashboard/settings 200 in 830ms (next.js: 55ms, proxy.ts: 368ms, application-code: 407ms)
+ POST /dashboard/settings 200 in 703ms (next.js: 6ms, proxy.ts: 136ms, application-code: 561ms)
+  └─ ƒ getAuthorizedStoreSettings() in 547ms src/lib/server/storeSettings.ts
+ POST /dashboard/settings 200 in 562ms (next.js: 7ms, proxy.ts: 104ms, application-code: 452ms)
+  └─ ƒ getAuthorizedStoreSettings() in 440ms src/lib/server/storeSettings.ts
+[?25h
